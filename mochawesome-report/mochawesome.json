@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-07-21T06:55:48.961Z",
+    "end": "2018-07-21T06:55:50.814Z",
+    "duration": 1853,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e8246de0-c00c-4f2f-b113-e142781f0441",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [
+      {
+        "title": "\"after each\" hook",
+        "fullTitle": "\"after each\" hook",
+        "timedOut": false,
+        "duration": 0,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "checkForUnfulfilledExpectations.call(this);\nrecordedExpects = [];",
+        "err": {},
+        "isRoot": true,
+        "uuid": "7865011b-43a5-4c77-9bd0-4acb7df261b6",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "4968241d-69de-49b3-bd69-1cb79e300308",
+        "title": "First API Test",
+        "fullFile": "/Users/zac/Documents/chakram-demo/test/first_test.js",
+        "file": "/test/first_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "First API Test \"before all\" hook",
+            "timedOut": false,
+            "duration": 8,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "let baseURL = \"https://reqres.in/api/users?page=2\";\n\nreturn chakram.wait(response = chakram.get(baseURL));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9ec7f55a-a727-445b-bc96-8ee2a798cf67",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "displays the response",
+            "fullTitle": "First API Test displays the response",
+            "timedOut": false,
+            "duration": 1704,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return response.then((api_response)=>{\n    console.log(api_response.body);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a358b2ab-3fb6-4a41-aafe-50145a1e5467",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "expects the response to be having status code 200",
+            "fullTitle": "First API Test expects the response to be having status code 200",
+            "timedOut": false,
+            "duration": 103,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return response.then((api_response)=>{\n    expect(api_response).to.have.status(200)\n})",
+            "err": {},
+            "isRoot": false,
+            "uuid": "37d1c1ed-cf51-478a-93a6-4ecac263d220",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a358b2ab-3fb6-4a41-aafe-50145a1e5467",
+          "37d1c1ed-cf51-478a-93a6-4ecac263d220"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1807,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

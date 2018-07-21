@@ -1,0 +1,29 @@
+{
+  "name": "chakram-demo",
+  "version": "1.0.0",
+  "description": "Chakram Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": " node ./node_modules/.bin/mocha --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zac11/chakram-demo.git"
+  },
+  "keywords": [
+    "Chakram",
+    "API",
+    "Testing"
+  ],
+  "author": "Rahul Yadav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zac11/chakram-demo/issues"
+  },
+  "homepage": "https://github.com/zac11/chakram-demo#readme",
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2"
+  }
+}
